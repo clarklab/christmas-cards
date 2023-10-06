@@ -1,8 +1,14 @@
 # Banner Static
 
-This build uses Tailwind, PostCSS, and Sergey (with a sprinkle of other things). The overall goal is to provid a STATIC html/css/js build of the new Baltimore Banner front-end, for consumption into React/ARC/partials. Onward!
+A buncha classic Christmas movies, in a deck!
+
+## Hi-rez card files
+
+Get the printables files [here](#).
 
 ## Installation
+
+If you need to install and build this page (and your name isn't Clark), proceed with caution:
 
 ```bash
 # Get all the stuff
@@ -14,4 +20,4 @@ $ npm run dev
 
 ## Issues
 
-If you have any problems, please feel free to contact Clark. Also know he's a frotend-end fellow, and might not be able to help with too much command line stuff.
+If you have any problems, please feel free to contact Clark. Also know he's a frotend-end fellow, and might not be able to help with too much command line stuff. Oh well!
