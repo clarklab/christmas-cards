@@ -1,0 +1,24 @@
+{
+  "name": "sergey-netlify",
+  "version": "1.0.0",
+  "description": "A Sergey example project, ready for Netlify",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "postcss ./assets/css/style.css -o ./dist/css/style.css & sergey",
+    "dev": "postcss ./assets/css/style.css -o ./dist/css/style.css --watch & sergey --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "sergey": "^0.0.13"
+  },
+  "devDependencies": {
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^12.0.1",
+    "tailwindcss": "^3.3.3"
+  }
+}
