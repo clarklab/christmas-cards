@@ -877,10 +877,6 @@ body {
 }
 @media (min-width: 768px) {
 
-  .md\:w-\[40vw\] {
-    width: 40vw;
-  }
-
   .md\:w-\[30vw\] {
     width: 30vw;
   }
