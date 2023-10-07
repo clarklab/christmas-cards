@@ -453,12 +453,12 @@
 
 window.addEventListener('deviceorientation', function(event) {
     const cards = document.querySelectorAll('.card img');
-    const maxDegree = 40; // Increased tilt for testing
-    let tiltX = (event.beta / 90) * maxDegree;  // between -40 and 40
-    let tiltY = (event.gamma / 90) * maxDegree;  // between -40 and 40
+    const maxDegree = 20; // Exaggerate tilt for testing
+    let tiltX = (event.beta / 90) * maxDegree;  // between -20 and 20
+    let tiltY = (event.gamma / 90) * maxDegree;  // between -20 and 20
 
     cards.forEach(card => {
-        card.style.transform = `rotateY(${tiltY}deg) rotateX(${tiltX}deg)`;  // Swapped order
+        card.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
         card.style.transformOrigin = 'center';
     });
 });
