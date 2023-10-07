@@ -426,19 +426,6 @@
       });
     });
 
-    window.addEventListener('deviceorientation', (e) => {
-  const tiltX = e.beta;  // Ranges between -180 and 180
-  const tiltY = e.gamma; // Ranges between -90 and 90
-  const maxTilt = 5;  // Define max tilt in degrees
-  
-  // Limit the tilt values within range
-  const limitedTiltX = Math.max(-maxTilt, Math.min(maxTilt, tiltX));
-  const limitedTiltY = Math.max(-maxTilt, Math.min(maxTilt, tiltY));
-  
-  const cards = document.querySelectorAll('.card');
-  cards.forEach(card => card.style.transform = `rotateX(${limitedTiltX}deg) rotateY(${limitedTiltY}deg)`);
-});
-
 });
 
 
