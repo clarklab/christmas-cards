@@ -429,7 +429,7 @@
 });
 
 window.addEventListener('deviceorientation', function(event) {
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.scroller');
     const maxDegree = 40; // Increased tilt for testing
     let tiltX = (event.beta / 90) * maxDegree;  // between -40 and 40
     let tiltY = (event.gamma / 90) * maxDegree;  // between -40 and 40
