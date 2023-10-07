@@ -429,8 +429,17 @@
 });
 
 window.addEventListener('deviceorientation', function(event) {
-  alert('alpha: ' + event.alpha);
+    const cards = document.querySelectorAll('.card');
+    const maxDegree = 20; // Exaggerate tilt for testing
+    let tiltX = (event.beta / 90) * maxDegree;  // between -20 and 20
+    let tiltY = (event.gamma / 90) * maxDegree;  // between -20 and 20
+
+    cards.forEach(card => {
+        card.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+        card.style.transformOrigin = 'center';
+    });
 });
+
 
 
 </script>
